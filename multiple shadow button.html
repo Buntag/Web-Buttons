@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiple Shadow Button</title>
+	<style>
+		.botton{
+			background: #005bea;
+			border-radius: 7px;
+			padding: 17px 43px;
+			box-shadow: -0.868px 4.924px 7px 0px rgba(0, 0, 0, 0.1);
+			position: relative;
+			color: #fff;
+			font-family: arial;
+			text-decoration: none;
+		}
+		.botton:before{
+		    position: absolute;
+		    left: 0;
+		    top: 8px;
+		    width: 98%;
+		    height: 100%;
+		    border-radius: 7px;
+		    background-color: rgb(0, 91, 234);
+		    opacity: 0.2;
+		    box-shadow: -0.868px 4.924px 7px 0px rgba(0, 0, 0, 0.1);
+		    content: '';
+		    z-index: -1;
+		    margin: auto;
+		    right: 0;
+		}
+		.botton:after {
+		    position: absolute;
+		    left: 0;
+		    top: 14px;
+		    width: 95%;
+		    height: 100%;
+		    border-radius: 7px;
+		    background-color: rgb(0, 91, 234);
+		    opacity: 0.2;
+		    box-shadow: -0.868px 4.924px 7px 0px rgba(0, 0, 0, 0.1);
+		    content: '';
+		    z-index: -1;
+		    margin: auto;
+		    right: 0;
+		}
+		.botton_wrap{
+			margin: 60px auto auto auto;
+			width: 400px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="botton_wrap">
+	<a href="#" class="botton">Sample Text</a>
+	</div>
+</body>
+</html>
